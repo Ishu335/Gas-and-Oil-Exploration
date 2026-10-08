@@ -33,16 +33,15 @@ It leverages **Python, Streamlit, MongoDB, and data visualization libraries** to
 ## 📂 Project Structure
 ```
 Gas-and-Oil-Exploration/
-│-- data/ # Datasets (seismic & exploration)
-│-- models/ # ML models for predictions
-│-- app.py # Streamlit main application
-│-- gui.py # Tkinter GUI application
-│-- requirements.txt # Dependencies
-│-- README.md # Project documentationGas-and-Oil-Exploration/
-│-- data/ # Datasets (seismic & exploration)
-│-- models/ # ML models for predictions
-│-- app.py # Streamlit main application
-│-- gui.py # Tkinter GUI application
+|-- Img #Image or Screenshort
+|-- Scripts 
+  │-- dataset/ # Datasets (seismic & exploration)
+  │-- Training models/ # ML models for dev
+  │-- custom_model # The Model train on Custom Dataset
+  │-- train_mode # the Model train on Default Dataset
+  │-- backend_code.py # the model code 
+  │-- predication.py # Predication logic code of values
+  │-- main.py # Validation and Starting point
 │-- requirements.txt # Dependencies
 │-- README.md # Project documentation
 ```
@@ -53,9 +52,7 @@ Gas-and-Oil-Exploration/
 ## ⚡ Installation
 1. Clone the repository:
   ```
-  python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
+  git clone <-- URL -->
 
   ```
 2. Create and activate a virtual environment:
@@ -63,6 +60,7 @@ venv\Scripts\activate      # On Windows
 python -m venv venv
 source venv/bin/activate   # On Linux/Mac
 venv\Scripts\activate      # On Windows
+
 ```
 3.Install dependencies:Install dependencies:
 ```
@@ -70,7 +68,8 @@ pip install -r requirements.txt
 ```
 4. Run the Tkinter GUI:
 ```
-python gui.py
+cd Scripts
+python main.py
 ```
 
 ## 📊 Sample Outputs
@@ -88,13 +87,10 @@ python gui.py
 6. Interactive visualization of seismic data
 
 ## 📊Screenshorts:
+<img width="1920" height="1080" alt="Validation" src="https://github.com/user-attachments/assets/9d469295-4954-41e6-a06f-21bba71bd019" />
+<img width="1920" height="1080" alt="Predication" src="https://github.com/user-attachments/assets/8ec88d46-0df6-4142-b819-a53cba119299" />
+<img width="550" height="473" alt="Predict" src="https://github.com/user-attachments/assets/0641299f-00c3-4808-b3bc-12ff55f05f78" />
 
-<img src="https://github.com/Ishu335/Gas-and-Oil-Exploration/blob/main/Validation.png" alt="Validation" width="500"/>
-<img src="https://github.com/Ishu335/Gas-and-Oil-Exploration/blob/main/Predication.png" alt="Predication" width="500"/>
-<img src="https://github.com/Ishu335/Gas-and-Oil-Exploration/blob/main/Predict.png" alt="Predict" width="500"/>
-<img src="https://github.com/Ishu335/Gas-and-Oil-Exploration/blob/main/HeatMap.png" alt="Visualication" width="500"/>
-<img src="https://github.com/Ishu335/Gas-and-Oil-Exploration/blob/main/Validation.png" alt="Validation" width="500"/>
-<img src="https://github.com/Ishu335/Gas-and-Oil-Exploration/blob/main/Predication.png" alt="Predication" width="500"/>
-<img src="https://github.com/Ishu335/Gas-and-Oil-Exploration/blob/main/Predict.png" alt="Predict" width="500"/>
-<img src="https://github.com/Ishu335/Gas-and-Oil-Exploration/blob/main/HeatMap.png" alt="Visualication" width="500"/>
+<img width="1920" height="1080" alt="HeatMap" src="https://github.com/user-attachments/assets/718c6bee-d410-42e1-a344-5ea89fc23b0a" />
+
 
